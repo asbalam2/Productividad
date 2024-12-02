@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/productividad.js"></script>
+    <link rel="stylesheet" href="css/productividad.css">
+    <title>productividad de pozos</title>
+</head>
+<body> 
+  <div class="contenedor">
+    <div class="contenedor__titulo">
+        <h1 class="titulo">Generador de IPR para yacimientos de aceite bajo saturados</h1>
+    </div>
+
+    <div class="contenedor__entradas">
+        <label for="porosidad">Porosidad
+            <input type="number" class="inputEntrada" id="porosidad" name="porosidad">
+        </label>
+        <label for="permeabilidad">Permeabilidad efectiva horizontal
+            <input type="number" class="inputEntrada" id="permeabilidad" name="permeabilidad">
+        </label>
+        <label for="espesor">Espesor del estrato
+            <input type="number" class="inputEntrada" id="espesor" name="espesor">
+        </label>
+        <label for="presiony">Presión del yacimiento
+            <input type="number" class="inputEntrada" id="presiony" name="presiony">
+        </label>
+        <label for="presionb">Presión de burbuja
+            <input type="number" class="inputEntrada" id="presionb" name="presionb">
+        </label>
+        <label for="bo">Factor de volumen del aceite
+            <input type="number" class="inputEntrada" id="bo" name="bo">
+        </label>
+        <label for="viscocidad">Viscocidad del fluido
+            <input type="number" class="inputEntrada" id="viscocidad" name="viscocidad">
+        </label>
+        <label for="compresibilidad">Compresibilidad total
+            <input type="number" class="inputEntrada" id="compresibilidad" name="compresibilidad">
+        </label>
+        <label for="drene">Área de drene
+            <input type="number" class="inputEntrada" id="drene" name="drene">
+        </label>
+        <label for="radiop">Radio del pozo
+            <input type="number" class="inputEntrada" id="radiop" name="radiop">
+        </label>
+        <label for="factord">Factor de daño
+            <input type="number" class="inputEntrada" id="factord" name="factord">
+        </label>
+        <label for="tiempo">Tiempo
+            <input type="number" class="inputEntrada" id="tiempo" name="tiempo">
+        </label>
+
+        <div class="contenedorRegimen">
+            <label class="regimenLabel" for="regimen">Selecciona el tipo de régimen
+                <select  id="regimen" name="regimen">
+                    <option value="Transitorio">Transitorio</option>
+                    <option value="Estacionario">Estacionario</option>
+                    <option value="Pseudo-Estacionario">Pseudo-Estacionario</option>
+                </select>
+            </label>
+        </div>
+       
+
+    </div>
+    <div class="contenedor__botones">
+        <p id="resultado"></p>
+        <button class="resultadoBoton" onclick="obtenerValores()">Obtener valores</button>
+        
+    </div>
+    
+  </div>
+
+  <footer class="pie">
+    <P class="copyRight">@ Díaz Ulibarri Aslan - 2024 - Productividad de pozos - Grupo 2 </P>
+  </footer>
+</body>
+</html>

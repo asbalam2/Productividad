@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/backjs.js" defer></script>
+    <link rel="stylesheet" href="css/backestilo.css">
+    <title>BackPreassure</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<body>
+    <div class="back_general">
+        <div class="back_tabla">
+            <table>
+                <tr>
+                    <th>pwf [lb/pg^2]</th>
+                    <th>qg [MPCD]</th>
+                </tr>
+                <tr>
+                    <td><input type="number" class="pwf"></td>
+                    <td><input type="number" class="qg"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" class="pwf"></td>
+                    <td><input type="number" class="qg"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" class="pwf"></td>
+                    <td><input type="number" class="qg"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" class="pwf"></td>
+                    <td><input type="number" class="qg"></td>
+                </tr>
+            </table>
+            <div class="datoPws">
+        <label for="datopws">pws
+            <input type="number" id="pwsdato" name="datoPws" class="datopws">
+        </label>
+        <button id="saveButton">Guardar Valores</button>
+            </div>
+            <p id="resultadoback"></p>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>Y (qg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            
+            </div>
+        <div class="back_botones">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+</body>
+</html>
