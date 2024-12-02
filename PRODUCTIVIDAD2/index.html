@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/voguel.css">
+    <script src="js/voguel.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Incluye Chart.js -->
+    <title>Voguel IPR</title>
+</head>
+<body>
+    <div class="contenedor__voguel">
+        <div class="voguel__título">
+            <h1>Voguel IPR</h1>
+        </div>
+        <div class="voguel__contenido">
+            <div class="voguel__inputs">
+                <label for="pws">pws [lb/pg²]
+                    <input type="number" class="input__pws" name="pws" id="voguelpws">
+                </label>
+                <label for="pwf">pwf [lb/pg²]
+                    <input type="number" class="input__pwf" name="pwf" id="voguelpwf">
+                </label>
+                <label for="q0">q0 [bpd]
+                    <input type="number" class="input__q0" name="q0" id="voguelq0">
+                </label>
+            </div>
+            <div class="voguel__resultados">
+                <p id="voguelResultado"></p> <!-- Mostrar q0max aquí -->
+                <canvas id="myChart"></canvas> <!-- Aquí se mostrará la gráfica -->
+            </div>
+            
+        </div>
+        <div class="voguel__botones">
+            <button class="obtenerIPR" onclick="obtenerIPR()">Obtener IPR</button>
+        </div>
+    </div>
+</body>
+</html></canvas> <!-- Aquí se mostrará la gráfica -->
+</div>
